@@ -8,26 +8,26 @@
 </head>
 <body>
   <div class="container">
-    <div class="form-container">
-      <div class="toggle">
-        <button id="register-btn" onclick="showRegister()">Registrar</button>
-        <button id="login-btn" onclick="showLogin()">Login</button>
-      </div>
-      <form id="register-form" class="form" style="display: none;">
-        <h2>Registrar</h2>
-        <input type="text" placeholder="Nome de usuário" required>
-        <input type="email" placeholder="E-mail" required>
-        <input type="password" placeholder="Senha" required>
-        <button type="submit">Registrar</button>
-      </form>
-      <form id="login-form" class="form">
-        <h2>Login</h2>
-        <input type="email" placeholder="E-mail" required>
-        <input type="password" placeholder="Senha" required>
-        <button type="submit">Login</button>
-      </form>
-    </div>
+    <h1>Registro</h1>
+    <form id="register-form">
+      <input type="text" id="register-username" placeholder="Nome de usuário" required>
+      <input type="email" id="register-email" placeholder="E-mail" required>
+      <input type="password" id="register-password" placeholder="Senha" required>
+      <button type="submit">Registrar</button>
+    </form>
+
+    <div class="separator">Já tem uma conta? Faça login abaixo:</div>
+
+    <h1>Login</h1>
+    <form id="login-form">
+      <input type="email" id="login-email" placeholder="E-mail" required>
+      <input type="password" id="login-password" placeholder="Senha" required>
+      <button type="submit">Login</button>
+    </form>
+
+    <p id="message" class="message"></p>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
